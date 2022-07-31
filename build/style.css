@@ -1,0 +1,70 @@
+/* FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+/* ROOT VAIRABLES */
+:root {
+  --var-main-font: "Outfit";
+  --var-white-color: hsl(0, 0%, 100%);
+  --var-light-gary: hsl(212, 45%, 89%);
+  --var-grayish-blue: hsl(220, 15%, 55%);
+  --var-dark-blue: hsl(218, 44%, 22%);
+}
+
+/* GENERAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: var(--var-main-font), sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* CONTENT */
+.content {
+  background: var(--var-light-gary);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* QR-CARD */
+.qr-card {
+  background: var(--var-white-color);
+  padding: 1.4rem;
+  border-radius: 14px;
+  text-align: center;
+  width: 30%;
+}
+.qr-card img {
+  border-radius: 8px;
+  margin-bottom: 2.4rem;
+}
+.qr-card h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--var-dark-blue);
+  margin-bottom: 1.4rem;
+}
+.qr-card p {
+  color: var(--var-grayish-blue);
+  margin-bottom: 1.2rem;
+}
+
+/* MEDIA */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+  .qr-card {
+    width: 50%;
+  }
+}
